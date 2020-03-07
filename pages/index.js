@@ -50,8 +50,8 @@ export default function Index() {
         <Typography variant="h4" component="h1" gutterBottom>
           Kayıt
         </Typography>
-        <Link href="/about" color="secondary">
-          Go to the about page
+        <Link href="/admin" color="secondary">
+          Tüm kayıtlar
         </Link>
       </Box>
 
