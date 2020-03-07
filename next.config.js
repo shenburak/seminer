@@ -1,4 +1,8 @@
 const dotenv = require('dotenv')
-const result = dotenv.config() || process.env
-
-module.exports = { env: result.parsed };
+var result = {}
+try {
+    result = dotenv.config() || process.env
+} catch (e) {
+    console.log(e, "dotenv error!!!")
+}
+module.exports = { env: result.parsed || process.env };
