@@ -18,7 +18,7 @@ function SignOut() {
   React.useEffect(() => {
     signOut().then(() => {
       client.resetStore().then(() => {
-        router.push('/signin')
+        router.push('/graphql/signin')
       })
     })
   }, [signOut, router, client])

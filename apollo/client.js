@@ -132,7 +132,7 @@ function createApolloClient(ctx = {}, initialState = {}) {
     return new ApolloClient({
         ssrMode,
         link: createIsomorphLink(ctx),
-        cache,
+        cache
     })
 }
 

@@ -1,22 +1,15 @@
 /* eslint-disable react/prop-types */
+import TextField from '@material-ui/core/TextField';
 export default function Field(props) {
     return (
         <div>
-            <label
-                id={[props.name, 'label'].join('-')}
-                htmlFor={[props.name, 'input'].join('-')}
-            >
-                {props.label}{' '}
-                {props.required ? <span title="Required">*</span> : undefined}
-            </label>
-            <br />
-            <input
+            <TextField type={props.type} id="outlined-basic"
                 autoComplete={props.autoComplete}
+                onChange={props.onChange}
                 id={[props.name, 'input'].join('-')}
                 name={props.name}
-                required={props.required}
-                type={props.type}
-            />
+                value={props.value}
+                required={props.required} label={props.label} variant="outlined" fullWidth={props.fullWidth} />
         </div>
     )
 }

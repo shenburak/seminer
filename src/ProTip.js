@@ -27,7 +27,7 @@ export default function ProTip() {
     return (
         <Typography className={classes.root} color="textSecondary">
             <LightBulbIcon className={classes.lightBulb} />
-            <Link href="/admin">Tüm kayıtlar</Link>
+            Sınıf isimlerine göre sıralamak için sayfayı yenileyin <b>!SINIF İSİMLERİ BİRBİRİNDEN FARKLI VE BOŞLUKSUZ OLMALI!, bütün alanları doldurunuz</b>
         </Typography>
     );
 }
